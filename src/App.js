@@ -25,7 +25,7 @@ class App extends Component {
     const {darkMode, activePage} = this.state
     return (
       <div className={darkMode ? 'app dark-mode' : 'app light-mode'}>
-       <SocialBar />
+        <SocialBar />.
         <Header
           toggleTheme={this.toggleTheme}
           navigateTo={this.navigateTo}

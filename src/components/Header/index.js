@@ -14,13 +14,13 @@ class Header extends Component {
           ANISH KUMAR SINHA
         </h1>
         <nav>
-          <button onClick={() => navigateTo('home')}>Home</button>
-          <button onClick={() => navigateTo('about')}>About</button>
+          <button  type = "button"onClick={() => navigateTo('home')}>Home</button>
+          <button type = "button" onClick={() => navigateTo('about')}>About</button>
           <span>Resume</span>
           <span>Skills</span>
           <span>Projects</span>
           <span>Contact</span>
-          <button className="theme-toggle-btn" onClick={toggleTheme}>
+          <button type = "button" className="theme-toggle-btn" onClick={toggleTheme}>
             {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
         </nav>
