@@ -1,0 +1,86 @@
+/* SocialBar.css */
+.social-bar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-bar a {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-bar a:hover {
+  color: #f39c12;
+}
+
+
+/* Base social bar styles */
+.social-bar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-bar a {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-bar a:hover {
+  color: #f39c12;
+}
+
+/* Dark mode compatibility */
+.app.dark-mode .social-bar a {
+  color: #fff;
+}
+
+/* Light mode hover override */
+.app.light-mode .social-bar a:hover {
+  color: #f39c12;
+}
+
+/* ========== Responsive Media Queries ========== */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .social-bar {
+    left: 10px;
+    gap: 12px;
+  }
+
+  .social-bar a {
+    font-size: 18px;
+  }
+}
+
+/* Mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .social-bar {
+    left: 8px;
+    gap: 10px;
+  }
+
+  .social-bar a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .social-bar {
+    display: none;
+  }
+}
