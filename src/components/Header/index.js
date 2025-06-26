@@ -8,12 +8,14 @@ class Header extends Component {
     return (
       <header className="header">
         <h1>
-        <span role="img" aria-label="star">⭐</span>
-        ANISH KUMAR SINHA
+          <span role="img" aria-label="star">
+            ⭐
+          </span>
+          ANISH KUMAR SINHA
         </h1>
         <nav>
-          <span onClick={() => navigateTo('home')}>Home</span>
-          <span onClick={() => navigateTo('about')}>About</span>
+          <button onClick={() => navigateTo('home')}>Home</button>
+          <button onClick={() => navigateTo('about')}>About</button>
           <span>Resume</span>
           <span>Skills</span>
           <span>Projects</span>
